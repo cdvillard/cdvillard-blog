@@ -16,6 +16,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Vault Alarm";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Vault Alarm"), local("Vault-Alarm"),
+    url("../fonts/VaultAlarm-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
 @import "theme";
 @import "reset";
 @import "layout";
