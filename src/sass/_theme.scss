@@ -1,6 +1,15 @@
-$tdbc-color-primary: #171392 !default;
-$tdbc-color-secondary: #db0a76 !default;
-$tdbc-color-background: #f9f9f9;
+$tdbc-hue-black: #3E3939 !default;
+$tdbc-hue-green: #27747C !default;
+$tdbc-hue-red: #C3443E;
+$tdbc-hue-rich-black: #222222;
+$tdbc-hue-white: #FFF;
+$tdbc-hue-silver: #C7C1BB;
+$tdbc-hue-yellow: #E5C149;
+$tdbc-hue-light-blue: #6BD4E4;
+
+$tdbc-color-primary: #27747C !default;
+$tdbc-color-secondary: #3E3939 !default;
+$tdbc-color-background: $tdbc-hue-white;
 
 $tdbc-brand-colors: (
   "primary": $tdbc-color-primary,
@@ -8,15 +17,15 @@ $tdbc-brand-colors: (
 ) !default;
 
 $tdbc-color-body: scale-color($tdbc-color-primary, $lightness: -30%, $saturation: -50%) !default;
-$tdbc-color-gray: mix(#767676, $tdbc-color-body, 70%) !default;
+$tdbc-color-gray: mix(#3E3939, $tdbc-color-body, 70%) !default;
 
 $tdbc-colors: map-merge(
   $tdbc-brand-colors,
   (
     "text": $tdbc-color-body,
     "background": $tdbc-color-background,
-    "light": #fff,
-    "dark": rgba(black, 0.87),
+    "light": #F2F1F4,
+    "dark": rgba(#222222, 0.87),
     "gray": $tdbc-color-gray,
   )
 );
@@ -35,7 +44,7 @@ $tdbc-button-variants: "primary", "secondary", "light", "gray" !default;
 $tdbc-link-color: tdbc-color("primary") !default;
 $tdbc-border-radius: 8px !default;
 
-$tdbc-font-family: "Baloo 2", sans-serif;
+$tdbc-font-family: "Poppins", sans-serif;
 $tdbc-font-family-headers: "Vault Alarm", sans-serif;
 $tdbc-strong-font-weight: 500 !default;
 $tdbc-h1-font-size: 4.2rem !default;

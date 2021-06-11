@@ -6,6 +6,7 @@ body {
   background-color: tdbc-color("background");
   color: $tdbc-color-body;
   font-family: $tdbc-font-family;
+  padding: 5vh 5vw;
 }
 
 // stylelint-disable selector-max-type, selector-no-qualifying-type
@@ -68,8 +69,13 @@ ul.tdbc-column-container {
   display: grid;
   min-height: 40vh;
   place-content: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 5vh;
+  // border-right: 1px solid $tdbc-hue-silver;
+  border: 1px solid $tdbc-hue-silver;
+  box-shadow:
+  -10px -10px 0px 0px teal,
+  -20px -20px 0px 0px black,
+  -30px -30px 0px 0px red,
 }
 
 .tdbc-row {

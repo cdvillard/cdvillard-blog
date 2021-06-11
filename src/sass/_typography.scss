@@ -1,4 +1,4 @@
-$tdbc-typography-variants: h1, h2, h3;
+$tdbc-typography-variants: h1, h2;
 
 @each $type in $tdbc-typography-variants {
   #{$type},
